@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<script>
+const r = {
+  hrblock: "https://hrblock.github.io",
+  google: "https://google.com",
+  github: "https://github.com"
+};
+
+location.replace(
+  r[new URLSearchParams(location.search).get("c")] 
+  || "https://example.com"
+);
+</script>
